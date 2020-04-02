@@ -1,0 +1,285 @@
+* {
+  font-family: Spartan;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#brand {
+  text-align: center;
+}
+
+#brand h2 {
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.nav {
+  overflow: hidden;
+  padding: 1em;
+}
+
+.nav #myLinks {
+  display: none;
+}
+
+.nav #myLinks .selected {
+  font-weight: 600;
+  color: #313639;
+}
+
+.nav a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  font-family: "Spartan";
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  color: #313639;
+  font-size: 1.5em;
+  left: 0;
+  top: 0;
+}
+
+.med-nav {
+  display: none;
+}
+
+/**************** Main ****************/
+
+.title-container {
+  line-height: 1.4;
+  padding: 2em 0;
+}
+
+.title-container h1 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-content p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+  padding-bottom: 2em;
+}
+
+/**************** List ****************/
+
+.list-content {
+  background: url(/images/our-network-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.list-content ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.list-content li {
+  margin: 0;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 0.5em;
+}
+
+/**************** Footer ****************/
+
+footer {
+  text-align: center;
+  height: 9em;
+}
+
+footer h1 {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+footer h1 span {
+  font-size: 0.5em;
+}
+
+footer p {
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.socials {
+  margin-top: 1em;
+}
+
+.socials a {
+  font-size: 2em;
+  border-radius: 50%;
+  color: #313639;
+  line-height: 1.7em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+/**************** Queries ****************/
+
+@media screen and (min-width: 600px) {
+  .nav {
+    padding: 2em;
+  }
+
+  .med-links a:hover {
+    color: pink;
+  }
+
+  .med-nav .selected {
+    font-weight: 600;
+    color: #313639;
+  }
+
+  .nav h2 {
+    font-size: 2em;
+  }
+
+  /**************** Main ****************/
+
+  .title-container {
+    line-height: 1.4;
+    padding: 2em 0;
+  }
+
+  .text-content p {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #myLinks a {
+    display: none;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav a.icon {
+    display: none;
+  }
+
+  #brand {
+    display: none;
+  }
+
+  .med-nav h2 {
+    float: left;
+    font-weight: 400;
+    font-size: 3vw;
+  }
+
+  .med-nav {
+    display: block;
+    height: 5em;
+    line-height: 5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .med-nav a {
+    color: #313639;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Spartan";
+  }
+
+  .med-links {
+    float: right;
+  }
+
+  .med-links a {
+    margin: 0 1vw;
+  }
+
+  /**************** Main ****************/
+
+  .title-container {
+    line-height: 1.4;
+    padding: 2em 0;
+  }
+
+  .title-container h1 {
+    width: 70%;
+  }
+
+  .list-content li {
+    line-height: 1.4em;
+    list-style: circle;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #brand h2 {
+    font-size: 2.2em;
+  }
+
+  .med-nav {
+    height: 6em;
+    line-height: 6em;
+  }
+
+  .med-links a {
+    font-family: "Spartan";
+    font-weight: 400;
+  }
+
+  /**************** Main ****************/
+
+  .title-container {
+    line-height: 1.4;
+    padding: 2em 0;
+    margin-top: 3em;
+  }
+
+  .title-container h1 {
+    width: 50%;
+    font-size: 2.2em;
+  }
+
+  .text-content {
+    padding-bottom: 2em;
+  }
+
+  .list-content {
+    padding: 3em 0;
+  }
+
+  .list-content li {
+    text-align: center;
+    width: 70%;
+    list-style: inside;
+    line-height: 1.9;
+  }
+}

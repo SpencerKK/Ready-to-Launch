@@ -1,0 +1,280 @@
+* {
+  font-family: Spartan;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#brand {
+  text-align: center;
+}
+
+#brand h2 {
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.nav {
+  overflow: hidden;
+  padding: 1em;
+}
+
+.nav #myLinks {
+  display: none;
+}
+
+.nav #myLinks .selected {
+  font-weight: 900;
+  color: #313639;
+}
+
+.nav a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  font-family: "Spartan";
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  color: #313639;
+  font-size: 1.5em;
+  left: 0;
+  top: 0;
+}
+
+.med-nav {
+  display: none;
+}
+
+/**************** Main ****************/
+
+#page-title {
+  display: none;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main img {
+  width: 80%;
+}
+
+.text-content {
+  width: 80%;
+  margin: 3em auto 0 auto;
+  text-align: left;
+}
+
+.text-content p {
+  font-size: 1em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+/**************** Launch-Grow ****************/
+
+.launch-grow {
+  background: url(/images/our-network-bg.jpg);
+  background-size: cover;
+  padding: 3em 0;
+}
+
+.launch-grow h1 {
+  text-align: center;
+}
+
+.launch-grow ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.launch-grow li {
+  margin: 0;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 0.5em;
+}
+
+/**************** Footer ****************/
+
+footer {
+  text-align: center;
+  height: 9em;
+}
+
+footer h1 {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+footer h1 span {
+  font-size: 0.5em;
+}
+
+footer p {
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.socials {
+  margin-top: 1em;
+}
+
+.socials a {
+  font-size: 1.2em;
+  border-radius: 50%;
+  color: #fff;
+  background: #313639;
+  line-height: 1.7em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/**************** Queries ****************/
+
+@media screen and (min-width: 600px) {
+  .med-nav .selected {
+    font-weight: 600;
+    color: #313639;
+  }
+
+  .nav h2 {
+    font-size: 2em;
+  }
+
+  .med-links {
+    float: right;
+  }
+
+  .med-links a {
+    margin: 0 1vw;
+  }
+
+  .med-links a:hover {
+    color: pink;
+  }
+
+  /**************** Main ****************/
+
+  .img-container {
+    width: 30em;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #myLinks a {
+    display: none;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav a.icon {
+    display: none;
+  }
+
+  #brand {
+    display: none;
+  }
+
+  .med-nav h2 {
+    float: left;
+    font-weight: 400;
+    font-size: 3vw;
+  }
+
+  .med-nav {
+    display: block;
+    height: 5em;
+    line-height: 5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .med-nav a {
+    color: #313639;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Spartan";
+  }
+
+  /**************** Main ****************/
+
+  #page-title {
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 600;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5em auto 6em auto;
+  }
+
+  .img-container {
+    width: 25em;
+    margin: 0;
+  }
+
+  .text-content {
+    width: 35em;
+    font-size: 0.8em;
+    margin: 0;
+  }
+
+  /**************** Launch-Grow ****************/
+
+  .launch-grow li {
+    line-height: 1.4em;
+    list-style: circle;
+  }
+
+  .launch-grow h1 {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #brand h2 {
+    font-size: 2em;
+  }
+
+  .med-nav {
+    height: 6em;
+    line-height: 6em;
+  }
+
+  #page-title {
+    margin-top: 2em;
+  }
+
+  .med-links a {
+    font-family: "Spartan";
+    font-weight: 400;
+  }
+}

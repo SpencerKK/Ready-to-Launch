@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/228a485911.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan:300,400,600|Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Contact/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div id="brand">
+        <h2>READY TO LAUNCH</h2>
+      </div>
+      <div id="myLinks">
+        <a href="/index.html">Home</a>
+        <a href="/Our Network/ournetwork.html">Our Network</a>
+        <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
+        <a href="/About/about.html">About</a>
+        <a href="#" class="selected">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="med-nav">
+      <a href="#">
+        <h2>Ready to Launch</h2>
+      </a>
+      <div class="med-links">
+        <a href="/index.html">Home</a>
+        <a href="/Our Network/ournetwork.html">Our Network</a>
+        <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
+        <a href="/About/about.html">About</a>
+        <a href="#" class="selected">Contact</a>
+      </div>
+    </div>
+    <div class="title-container">
+      <h1>Get in Contact</h1>
+    </div>
+    <div class="form-container">
+      <form class="contact-form" action="contactForm.php" method="post">
+        <input type="text" name="name" placeholder="Full Name" />
+        <input type="text" name="mail" placeholder="Your e-mail" />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <!-- <select name="" id="">
+          <option value="">I'm a sponser</option>
+          <option value="">I'm a podcast</option>
+          <option value="">I'm a Guest</option>
+        </select> -->
+        <button type="submit" name="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <h1>Ready to Launch<span>©</span></h1>
+      <p>by Zoe Kenealy</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></a>
+        <a href="#"><i class="fab fa-itunes-note"></i></a>
+      </div>
+    </footer>
+    <script src="/Contact/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,674 @@
+* {
+  font-family: Spartan;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+
+#brand {
+  text-align: center;
+}
+
+#brand h2 {
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.nav {
+  overflow: hidden;
+  padding: 1em;
+}
+
+.nav #myLinks {
+  display: none;
+}
+
+.nav #myLinks .selected {
+  font-weight: 600;
+  color: #313639;
+}
+
+.nav a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  font-family: "Spartan";
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  color: #313639;
+  font-size: 1.5em;
+  left: 0;
+  top: 0;
+}
+
+.med-nav {
+  display: none;
+}
+
+/**************** BANNER ****************/
+
+.banner {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.166),
+      rgba(255, 255, 255, 0.178)
+    ),
+    url(/images/zoe-banner-sml.jpg);
+  width: 95%;
+  height: 60vh;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner h2 {
+  text-align: center;
+  color: pink;
+  font-size: 10vw;
+  font-weight: 900;
+  padding-top: 27vh;
+  font-family: "Cedarville Cursive";
+  line-height: 1em;
+}
+
+.banner button {
+  height: 6vh;
+  width: 35vw;
+  font-size: 4vw;
+  margin-top: 3vh;
+  margin-left: 28vw;
+  background: #fff;
+  border: none;
+  font-family: Spartan;
+  border-radius: 7px;
+}
+
+.banner button:hover {
+  background: pink;
+  border: 1px solid #000;
+}
+
+/**************** Home Detail ****************/
+
+.home-detail {
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.home-detail h2 {
+  font-family: Spartan;
+  font-weight: 400;
+  font-size: 1.7em;
+  padding: 0.5em 0;
+}
+
+.home-detail p {
+  font-family: Spartan;
+  line-height: 2.3em;
+}
+
+/**************** Options ****************/
+
+.options {
+  text-align: center;
+  margin-top: 3em;
+  width: 100%;
+}
+
+.options a {
+  color: #313639;
+  text-decoration: none;
+}
+
+.item {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.item span {
+  display: block;
+  font-size: 1.5em;
+  font-family: Spartan;
+}
+
+.options img {
+  width: 8em;
+  color: black;
+  padding: 1em;
+}
+
+/**************** Episodes ****************/
+
+.episodes h2 {
+  font-weight: 400;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+.episodes {
+  margin-top: 5em;
+  background: url(/images/our-network-bg.jpg);
+  background-size: cover;
+  padding: 3em;
+}
+
+.episodes h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.episode-cards li {
+  list-style-type: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.685);
+  width: 15em;
+  margin: 4em auto;
+  background: #fff;
+  border-radius: 7px;
+}
+
+.card p {
+  margin-top: 1em;
+  line-height: 1.4;
+}
+
+.card img {
+  width: 15em;
+  height: 10em;
+  border-radius: 7px 7px 0 0;
+}
+
+.card-container {
+  padding: 1em 1em;
+}
+
+.itunes-link {
+  text-align: center;
+  background: #fff;
+  padding: 1em;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 7px;
+  border: 1px solid #313639;
+}
+
+.itunes-link p {
+  font-size: 0.8em;
+}
+
+.itunes-link img {
+  width: 5em;
+  margin-top: 0.5em;
+}
+
+/* Card Transitions */
+
+/**************** Launch Grow ****************/
+
+.launch-grow {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.launch-grow h2 {
+  font-family: Spartan;
+  font-weight: 400;
+  font-size: 3em;
+  border-bottom: 2px solid pink;
+}
+
+.launch-grow p {
+  font-family: Spartan;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-top: 1em;
+}
+
+.launch-grow button {
+  font-size: 1.5em;
+  border: 2px solid #313639;
+  background: #fff;
+  margin-top: 1em;
+  height: 3em;
+  width: 9em;
+  font-size: 1em;
+  border-radius: 7px;
+}
+
+.launch-grow button:hover {
+  background: pink;
+}
+
+.grow {
+  margin-top: 5em;
+}
+
+/**************** Questions ****************/
+
+.questions-container {
+  margin: 0 auto 0 auto;
+  background: pink;
+}
+
+.questions-title {
+  font-weight: 400;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  background: pink;
+  border-top: 1px solid black;
+}
+
+.question h1 {
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0 auto 1em auto;
+  width: 80%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #313639;
+}
+
+.question {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.question p {
+  line-height: 1.9;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+/**************** Form ****************/
+
+.form-container {
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  background: pink;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+  border: 1px solid #313639;
+}
+
+.form-container h3 {
+  font-weight: 400;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.form-container p {
+  margin-bottom: 2em;
+  line-height: 2em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid rgb(255, 222, 227);
+}
+
+.form-container input,
+textarea {
+  font-size: 1em;
+  margin: 0.5em auto;
+  padding: 0.8em;
+  border: none;
+  width: 80%;
+}
+
+form select {
+  width: 86%;
+  margin: 0 auto;
+  background: #fff;
+  height: 4em;
+  color: grey;
+}
+
+.form-container textarea {
+  padding: 0.5em;
+  width: 82%;
+}
+
+.form-container button {
+  width: 8em;
+  height: 3em;
+  background: #313639;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  margin: 1em auto 2em auto;
+}
+
+/**************** Insta ****************/
+
+.sml-feed {
+  margin-top: 4em;
+}
+
+.lrg-feed {
+  display: none;
+}
+
+/**************** Footer ****************/
+
+footer {
+  text-align: center;
+  height: 10em;
+}
+
+footer h1 {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+footer h1 span {
+  font-size: 0.5em;
+}
+
+footer p {
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.socials {
+  margin-top: 1em;
+}
+
+.socials a {
+  font-size: 1.2em;
+  border-radius: 50%;
+  color: #fff;
+  background: #313639;
+  line-height: 1.7em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/**************** Queries ****************/
+
+@media screen and (min-width: 600px) {
+  .nav {
+    padding: 2em;
+  }
+
+  .med-nav .selected {
+    font-weight: 600;
+    color: #313639;
+  }
+
+  .med-links a:hover {
+    color: pink;
+  }
+
+  .nav h2 {
+    font-size: 2em;
+  }
+
+  .banner {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.158),
+        rgba(255, 255, 255, 0.235)
+      ),
+      url(/images/zoe-banner.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner h2 {
+    font-size: 9vw;
+  }
+
+  .banner button {
+    width: 20vw;
+    height: 5vh;
+    margin-left: 35vw;
+    font-size: 2vw;
+  }
+
+  .home-detail h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .options .item {
+    padding: 0 2em;
+  }
+
+  .episodes {
+    padding: 6em 0;
+  }
+
+  .episodes h2 {
+    margin: 0 auto 1.5em auto;
+    padding-bottom: 0.5em;
+    width: 30%;
+    border-bottom: 1px solid black;
+  }
+
+  .episode-cards {
+    text-align: center;
+  }
+
+  .card {
+    margin: 1em 2em;
+  }
+
+  .episode-cards li {
+    display: inline-block;
+    margin: 0em;
+  }
+
+  .itunes-link {
+    margin-top: 3em;
+    padding: 1em 2em;
+  }
+
+  .launch-grow {
+    width: 70%;
+    padding: 7em 0;
+  }
+
+  .launch-grow p {
+    line-height: 2em;
+  }
+
+  .grow {
+    text-align: right;
+  }
+
+  .form-container {
+    margin-top: 6em;
+  }
+
+  .form-container form {
+    width: 30em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #myLinks a {
+    display: none;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav a.icon {
+    display: none;
+  }
+
+  #brand {
+    display: none;
+  }
+
+  .med-nav h2 {
+    float: left;
+    font-weight: 400;
+    font-size: 3vw;
+  }
+
+  .med-nav {
+    display: block;
+    height: 5em;
+    line-height: 5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .med-nav a {
+    color: #313639;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Spartan";
+  }
+
+  .med-links {
+    float: right;
+  }
+
+  .med-links a {
+    margin: 0 1vw;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .banner h2 {
+    font-size: 8vw;
+    font-family: "Cedarville Cursive";
+  }
+
+  .banner button {
+    margin-left: 40vw;
+    width: 15vw;
+    font-size: 1.5vw;
+  }
+
+  .home-detail p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .episodes h2 {
+    margin: 0 auto 1.5em auto;
+    padding-bottom: 0.5em;
+    width: 30%;
+    border-bottom: 1px solid black;
+  }
+
+  .episode-cards {
+    text-align: center;
+  }
+
+  .card {
+    margin: 1em 1em;
+  }
+
+  .episode-cards li {
+    display: inline-block;
+    margin: 0em;
+  }
+
+  .questions-container {
+    display: flex;
+  }
+
+  .questions-container > div {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .questions-container > div:first-child {
+    margin-right: 20px;
+  }
+
+  .lrg-feed {
+    display: block;
+    width: 80%;
+    margin: 5em auto 0 auto;
+  }
+
+  .sml-feed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #brand h2 {
+    font-size: 2.2em;
+  }
+
+  .med-nav {
+    height: 6em;
+    line-height: 6em;
+  }
+
+  .med-links a {
+    font-family: "Spartan";
+    font-weight: 400;
+  }
+
+  .banner {
+    height: 70vh;
+  }
+
+  .banner h2 {
+    font-size: 5vw;
+    font-family: "Cedarville Cursive";
+  }
+
+  .banner button {
+    font-size: 1em;
+    width: 10vw;
+    height: 6vh;
+    margin-left: 44vw;
+  }
+
+  .home-detail h2 {
+    border-bottom: 1px solid #313639;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  .home-detail p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .itunes-link {
+    width: 20%;
+  }
+}

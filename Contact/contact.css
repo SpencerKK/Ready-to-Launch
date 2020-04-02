@@ -1,0 +1,287 @@
+* {
+  font-family: Spartan;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background: rgba(255, 192, 203, 0.694);
+}
+
+button {
+  cursor: pointer;
+}
+
+#brand {
+  text-align: center;
+}
+
+#brand h2 {
+  font-weight: 300;
+  margin-left: 1em;
+}
+
+.nav {
+  overflow: hidden;
+  padding: 1em;
+}
+
+.nav #myLinks {
+  display: none;
+}
+
+.nav #myLinks .selected {
+  font-weight: 600;
+  color: #313639;
+}
+
+.nav a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+  font-family: "Spartan";
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  color: #313639;
+  font-size: 1.5em;
+  left: 0;
+  top: 0;
+}
+
+.med-nav {
+  display: none;
+}
+
+/**************** Main ****************/
+
+.title-container {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.title-container h1 {
+  font-size: 2em;
+}
+
+.sub-header {
+  width: 80%;
+  margin: 1em auto 0 auto;
+  text-align: left;
+}
+
+.sub-header p {
+  font-size: 1em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+/**************** Form ****************/
+
+.form-container {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  background: pink;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+  border: 1px solid #313639;
+}
+
+.form-container h3 {
+  font-weight: 400;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.form-container p {
+  margin-bottom: 2em;
+  line-height: 2em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid rgb(255, 222, 227);
+}
+
+.form-container input,
+textarea {
+  font-size: 1em;
+  margin: 0.5em auto;
+  padding: 0.8em;
+  border: none;
+  width: 80%;
+}
+
+.form-container textarea {
+  padding: 0.5em;
+  width: 82%;
+}
+
+.form-container button {
+  width: 8em;
+  height: 3em;
+  background: #313639;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  margin: 1em auto 2em auto;
+}
+
+/**************** Footer ****************/
+
+footer {
+  text-align: center;
+  height: 10em;
+  margin-top: 5em;
+}
+
+footer h1 {
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+footer h1 span {
+  font-size: 0.5em;
+}
+
+footer p {
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+.socials {
+  margin-top: 1em;
+}
+
+.socials a {
+  font-size: 1.2em;
+  border-radius: 50%;
+  color: #fff;
+  background: #313639;
+  line-height: 1.7em;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.3em;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/**************** Queries ****************/
+
+@media screen and (min-width: 600px) {
+  .nav {
+    padding: 2em;
+  }
+
+  .med-links a:hover {
+    color: pink;
+  }
+
+  .med-nav .selected {
+    font-weight: 600;
+    color: #313639;
+  }
+
+  .nav h2 {
+    font-size: 2em;
+  }
+
+  .title-container h1 {
+    font-size: 3em;
+  }
+
+  .form-container {
+    margin-top: 3em;
+  }
+
+  .form-container form {
+    width: 80%;
+    padding-top: 2em;
+  }
+
+  .form-container textarea {
+    padding: 0.5em;
+    width: 81%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #myLinks a {
+    display: none;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav a.icon {
+    display: none;
+  }
+
+  #brand {
+    display: none;
+  }
+
+  .med-nav h2 {
+    float: left;
+    font-weight: 400;
+    font-size: 3vw;
+  }
+
+  .med-nav {
+    display: block;
+    height: 5em;
+    line-height: 5em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .med-nav a {
+    color: #313639;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Spartan";
+  }
+
+  .med-links {
+    float: right;
+  }
+
+  .med-links a {
+    margin: 0 1vw;
+  }
+
+  .form-container form {
+    width: 50%;
+    padding-top: 2em;
+  }
+
+  .form-container button {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #brand h2 {
+    font-size: 2.2em;
+  }
+
+  .med-nav {
+    height: 6em;
+    line-height: 6em;
+  }
+
+  .med-links a {
+    font-family: "Spartan";
+    font-weight: 400;
+  }
+}
