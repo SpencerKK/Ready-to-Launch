@@ -16,9 +16,8 @@ button {
   text-align: center;
 }
 
-#brand h2 {
-  font-weight: 300;
-  margin-left: 1em;
+#brand img {
+  width: 50vw;
 }
 
 .nav {
@@ -93,8 +92,7 @@ button {
 
 footer {
   text-align: center;
-  height: 10em;
-  margin-top: 5em;
+  height: 9em;
 }
 
 footer h1 {
@@ -103,7 +101,7 @@ footer h1 {
 }
 
 footer h1 span {
-  font-size: 0.5em;
+  font-size: 0.3em;
 }
 
 footer p {
@@ -116,10 +114,9 @@ footer p {
 }
 
 .socials a {
-  font-size: 1.2em;
+  font-size: 2em;
   border-radius: 50%;
-  color: #fff;
-  background: #313639;
+  color: #313639;
   line-height: 1.7em;
   width: 1.5em;
   height: 1.5em;
@@ -129,11 +126,27 @@ footer p {
   transition: 0.5s;
 }
 
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+.itunes:hover {
+  color: #ea4cc0;
+}
+
 /**************** Queries ****************/
 
 @media screen and (min-width: 600px) {
   .nav {
-    padding: 2em;
+    padding: 1em;
   }
 
   .med-nav .selected {
@@ -145,8 +158,10 @@ footer p {
     color: pink;
   }
 
-  .nav h2 {
-    font-size: 2em;
+  #brand img {
+    width: 20em;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -163,14 +178,13 @@ footer p {
     display: none;
   }
 
-  #brand {
+  #brand img {
     display: none;
   }
 
-  .med-nav h2 {
-    float: left;
-    font-weight: 400;
-    font-size: 3vw;
+  .med-nav img {
+    width: 32vw;
+    padding-top: 0.9em;
   }
 
   .med-nav {
@@ -227,13 +241,14 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
-  #brand h2 {
-    font-size: 2.2em;
-  }
-
   .med-nav {
     height: 6em;
     line-height: 6em;
+  }
+
+  .med-nav img {
+    width: 30em;
+    padding-top: 0.7em;
   }
 
   .med-links a {

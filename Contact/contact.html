@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/228a485911.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Spartan:300,400,600|Cedarville+Cursive&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Contact/contact.css" />
-    <title>Contact</title>
-  </head>
-  <body>
-    <div class="nav">
-      <div id="brand">
-        <h2>READY TO LAUNCH</h2>
-      </div>
-      <div id="myLinks">
-        <a href="/index.html">Home</a>
-        <a href="/Our Network/ournetwork.html">Our Network</a>
-        <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
-        <a href="/About/about.html">About</a>
-        <a href="#" class="selected">Contact</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/228a485911.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Spartan:300,400,600|Cedarville+Cursive&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Contact/contact.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div id="brand">
+      <img src="/images/logo-black.png" alt="brand-logo" />
     </div>
-    <div class="med-nav">
-      <a href="#">
-        <h2>Ready to Launch</h2>
-      </a>
-      <div class="med-links">
-        <a href="/index.html">Home</a>
-        <a href="/Our Network/ournetwork.html">Our Network</a>
-        <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
-        <a href="/About/about.html">About</a>
-        <a href="#" class="selected">Contact</a>
-      </div>
+    <div id="myLinks">
+      <a href="/index.html">Home</a>
+      <a href="/Our Network/outnetwork.html">Our Network</a>
+      <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
+      <a href="/About/about.html">About</a>
+      <a href="/Contact/contact.html" class="selected">Contact</a>
     </div>
-    <div class="title-container">
-      <h1>Get in Contact</h1>
+    <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <div class="med-nav">
+    <a href="#">
+      <img src="/images/logo-black.png" alt="brand-logo" />
+    </a>
+    <div class="med-links">
+      <a href="/index.html">Home</a>
+      <a href="/Our Network/outnetwork.html">Our Network</a>
+      <a href="/Your Podcast/yourpodcast.html">Your Podcast</a>
+      <a href="/About/about.html">About</a>
+      <a href="/Contact/contact.html" class="selected">Contact</a>
     </div>
+  </div>
+
+  <div class="container">
+    <img src="/images/contact-bg.JPG" alt="contact-page-image" />
+
     <div class="form-container">
-      <form class="contact-form" action="contactForm.php" method="post">
-        <input type="text" name="name" placeholder="Full Name" />
-        <input type="text" name="mail" placeholder="Your e-mail" />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <!-- <select name="" id="">
-          <option value="">I'm a sponser</option>
-          <option value="">I'm a podcast</option>
-          <option value="">I'm a Guest</option>
-        </select> -->
-        <button type="submit" name="submit">Submit</button>
+      <h1>Get In Touch!</h1>
+      <p>
+        Reach out to talk about working with our network, your podcast, or to
+        pitch yourself as a guest on one of our shows! I look forward to
+        chatting with you about how we can work together.
+      </p>
+      <form action="POST" data-netlify="true">
+        <input type="text" id="name" name="name" placeholder="Full Name" required />
+        <input type="email" id="email" name="email" placeholder="e-mail" required />
+        <select name="title" id="title">
+          <option value="" disabled selected>I am a:</option>
+          <option value="guest">Guest</option>
+          <option value="sponsor">Sponsor</option>
+          <option value="podcaster">Podcaster</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="message" id="message" placeholder="How Can We Help You?"></textarea>
+        <button type="submit" name="submit" value="SEND MESSAGE">
+          Submit
+        </button>
       </form>
     </div>
-    <footer>
-      <h1>Ready to Launch<span>©</span></h1>
-      <p>by Zoe Kenealy</p>
-      <div class="socials">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-spotify"></i></a>
-        <a href="#"><i class="fab fa-itunes-note"></i></a>
-      </div>
-    </footer>
-    <script src="/Contact/contact.js"></script>
-  </body>
+  </div>
+
+  <footer>
+    <h1>Ready to Launch<span>©</span></h1>
+    <p>by Zoe Kim Kenealy</p>
+    <div class="socials">
+      <a class="instagram" href="https://www.instagram.com/zoekenealy/?hl=en"><i class="fab fa-instagram"></i></a>
+      <a class="youtube" href="https://www.youtube.com/user/LovelyPink93"><i class="fab fa-youtube"></i></a>
+      <a class="spotify" href="https://open.spotify.com/show/0XTw5dYhFfpRVeLLU9cg3q?si=zolp3pu-R3yBs5aebtLthw"><i
+          class="fab fa-spotify"></i></a>
+      <a class="itunes" href="https://podcasts.apple.com/us/podcast/ready-to-launch-podcast/id1453322293"><i
+          class="fab fa-itunes-note"></i></a>
+    </div>
+  </footer>
+
+  <script src="/Contact/contact.js"></script>
+</body>
+
 </html>

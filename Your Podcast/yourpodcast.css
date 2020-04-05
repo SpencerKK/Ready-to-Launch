@@ -16,9 +16,8 @@ button {
   text-align: center;
 }
 
-#brand h2 {
-  font-weight: 300;
-  margin-left: 1em;
+#brand img {
+  width: 50vw;
 }
 
 .nav {
@@ -87,8 +86,7 @@ button {
 /**************** Launch-Grow ****************/
 
 .launch-grow {
-  background: url(/images/our-network-bg.jpg);
-  background-size: cover;
+  background: pink;
   padding: 3em 0;
 }
 
@@ -123,7 +121,7 @@ footer h1 {
 }
 
 footer h1 span {
-  font-size: 0.5em;
+  font-size: 0.3em;
 }
 
 footer p {
@@ -136,10 +134,9 @@ footer p {
 }
 
 .socials a {
-  font-size: 1.2em;
+  font-size: 1.8em;
   border-radius: 50%;
-  color: #fff;
-  background: #313639;
+  color: #313639;
   line-height: 1.7em;
   width: 1.5em;
   height: 1.5em;
@@ -149,16 +146,28 @@ footer p {
   transition: 0.5s;
 }
 
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+.itunes:hover {
+  color: #ea4cc0;
+}
+
 /**************** Queries ****************/
 
 @media screen and (min-width: 600px) {
   .med-nav .selected {
     font-weight: 600;
     color: #313639;
-  }
-
-  .nav h2 {
-    font-size: 2em;
   }
 
   .med-links {
@@ -171,6 +180,12 @@ footer p {
 
   .med-links a:hover {
     color: pink;
+  }
+
+  #brand img {
+    width: 20em;
+    margin: 0;
+    padding: 0;
   }
 
   /**************** Main ****************/
@@ -194,14 +209,13 @@ footer p {
     display: none;
   }
 
-  #brand {
+  #brand img {
     display: none;
   }
 
-  .med-nav h2 {
-    float: left;
-    font-weight: 400;
-    font-size: 3vw;
+  .med-nav img {
+    width: 32vw;
+    padding-top: 0.9em;
   }
 
   .med-nav {
@@ -223,6 +237,8 @@ footer p {
 
   #page-title {
     font-size: 2em;
+    width: 20em;
+    margin: 0 auto;
     display: block;
     text-align: center;
     margin-top: 1em;
@@ -260,8 +276,9 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
-  #brand h2 {
-    font-size: 2em;
+  .med-nav img {
+    width: 30em;
+    padding-top: 0.7em;
   }
 
   .med-nav {

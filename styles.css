@@ -18,9 +18,8 @@ button {
   text-align: center;
 }
 
-#brand h2 {
-  font-weight: 300;
-  margin-left: 1em;
+#brand img {
+  width: 50vw;
 }
 
 .nav {
@@ -62,40 +61,36 @@ button {
 /**************** BANNER ****************/
 
 .banner {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.166),
-      rgba(255, 255, 255, 0.178)
-    ),
-    url(/images/zoe-banner-sml.jpg);
-  width: 95%;
-  height: 60vh;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("/images/home-bg.jpg");
   background-size: cover;
+  background-position: center;
+  height: 60vh;
 }
 
 .banner h2 {
   text-align: center;
-  color: pink;
-  font-size: 10vw;
+  color: #fff;
+  font-size: 12vw;
   font-weight: 900;
-  padding-top: 27vh;
+  padding-top: 23vh;
   font-family: "Cedarville Cursive";
   line-height: 1em;
 }
 
 .banner button {
+  display: block;
   height: 6vh;
   width: 35vw;
   font-size: 4vw;
-  margin-top: 3vh;
-  margin-left: 28vw;
   background: #fff;
   border: none;
   font-family: Spartan;
   border-radius: 7px;
+  margin: 2em auto;
+}
+
+.banner a {
+  text-decoration: none;
 }
 
 .banner button:hover {
@@ -123,34 +118,15 @@ button {
   line-height: 2.3em;
 }
 
-/**************** Options ****************/
+/**************** Graphic ****************/
 
-.options {
+.graphic {
   text-align: center;
+}
+
+.graphic img {
+  width: 25em;
   margin-top: 3em;
-  width: 100%;
-}
-
-.options a {
-  color: #313639;
-  text-decoration: none;
-}
-
-.item {
-  vertical-align: top;
-  display: inline-block;
-}
-
-.item span {
-  display: block;
-  font-size: 1.5em;
-  font-family: Spartan;
-}
-
-.options img {
-  width: 8em;
-  color: black;
-  padding: 1em;
 }
 
 /**************** Episodes ****************/
@@ -163,7 +139,7 @@ button {
 
 .episodes {
   margin-top: 5em;
-  background: url(/images/our-network-bg.jpg);
+  background: url(/images/episodes-bg.png);
   background-size: cover;
   padding: 3em;
 }
@@ -177,6 +153,16 @@ button {
 
 .episode-cards li {
   list-style-type: none;
+}
+
+.episode-cards li:hover {
+  opacity: 0.8;
+  border-radius: 7px;
+}
+
+.episodes a {
+  text-decoration: none;
+  color: #000;
 }
 
 .card {
@@ -202,26 +188,18 @@ button {
   padding: 1em 1em;
 }
 
-.itunes-link {
+.listen-options {
   text-align: center;
-  background: #fff;
-  padding: 1em;
-  width: 30%;
-  margin: 0 auto;
-  border-radius: 7px;
-  border: 1px solid #313639;
 }
 
-.itunes-link p {
-  font-size: 0.8em;
+.listen-options img {
+  width: 10em;
 }
 
-.itunes-link img {
-  width: 5em;
-  margin-top: 0.5em;
+.listen-options img:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
-
-/* Card Transitions */
 
 /**************** Launch Grow ****************/
 
@@ -263,6 +241,10 @@ button {
   margin-top: 5em;
 }
 
+.monetize {
+  margin-top: 5em;
+}
+
 /**************** Questions ****************/
 
 .questions-container {
@@ -286,7 +268,6 @@ button {
   margin: 0 auto 1em auto;
   width: 80%;
   padding-bottom: 1em;
-  border-bottom: 1px solid #313639;
 }
 
 .question {
@@ -341,10 +322,11 @@ textarea {
 
 form select {
   width: 86%;
-  margin: 0 auto;
+  margin: 0.2em auto;
   background: #fff;
-  height: 4em;
+  height: 3em;
   color: grey;
+  font-size: 1em;
 }
 
 .form-container textarea {
@@ -364,6 +346,16 @@ form select {
 
 /**************** Insta ****************/
 
+.insta-feed {
+  position: relative;
+}
+
+.insta-feed img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+
 .sml-feed {
   margin-top: 4em;
 }
@@ -376,7 +368,7 @@ form select {
 
 footer {
   text-align: center;
-  height: 10em;
+  height: 9em;
 }
 
 footer h1 {
@@ -385,7 +377,7 @@ footer h1 {
 }
 
 footer h1 span {
-  font-size: 0.5em;
+  font-size: 0.3em;
 }
 
 footer p {
@@ -398,10 +390,9 @@ footer p {
 }
 
 .socials a {
-  font-size: 1.2em;
+  font-size: 2em;
   border-radius: 50%;
-  color: #fff;
-  background: #313639;
+  color: #313639;
   line-height: 1.7em;
   width: 1.5em;
   height: 1.5em;
@@ -411,11 +402,27 @@ footer p {
   transition: 0.5s;
 }
 
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+.itunes:hover {
+  color: #ea4cc0;
+}
+
 /**************** Queries ****************/
 
 @media screen and (min-width: 600px) {
   .nav {
-    padding: 2em;
+    padding: 1em;
   }
 
   .med-nav .selected {
@@ -427,40 +434,34 @@ footer p {
     color: pink;
   }
 
-  .nav h2 {
-    font-size: 2em;
+  #brand img {
+    width: 20em;
+    margin: 0;
+    padding: 0;
   }
 
   .banner {
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.158),
-        rgba(255, 255, 255, 0.235)
-      ),
-      url(/images/zoe-banner.jpg);
-    width: 100%;
-    background-position: center;
     background-size: cover;
   }
 
   .banner h2 {
-    font-size: 9vw;
+    font-size: 10vw;
+    padding-top: 20vh;
   }
 
   .banner button {
     width: 20vw;
     height: 5vh;
-    margin-left: 35vw;
     font-size: 2vw;
   }
 
   .home-detail h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
   }
 
-  .options .item {
-    padding: 0 2em;
+  .graphic img {
+    width: 40em;
   }
 
   .episodes {
@@ -487,9 +488,12 @@ footer p {
     margin: 0em;
   }
 
-  .itunes-link {
-    margin-top: 3em;
-    padding: 1em 2em;
+  .listen-options {
+    margin-top: 5em;
+  }
+
+  .listen-options img {
+    margin: 0 1em;
   }
 
   .launch-grow {
@@ -512,6 +516,10 @@ footer p {
   .form-container form {
     width: 30em;
   }
+
+  .insta-feed img {
+    width: 100vw;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -527,14 +535,13 @@ footer p {
     display: none;
   }
 
-  #brand {
+  #brand img {
     display: none;
   }
 
-  .med-nav h2 {
-    float: left;
-    font-weight: 400;
-    font-size: 3vw;
+  .med-nav img {
+    width: 32vw;
+    padding-top: 0.9em;
   }
 
   .med-nav {
@@ -565,12 +572,11 @@ footer p {
   }
 
   .banner h2 {
-    font-size: 8vw;
+    font-size: 7vw;
     font-family: "Cedarville Cursive";
   }
 
   .banner button {
-    margin-left: 40vw;
     width: 15vw;
     font-size: 1.5vw;
   }
@@ -625,13 +631,14 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
-  #brand h2 {
-    font-size: 2.2em;
-  }
-
   .med-nav {
     height: 6em;
     line-height: 6em;
+  }
+
+  .med-nav img {
+    width: 30em;
+    padding-top: 0.7em;
   }
 
   .med-links a {
@@ -644,7 +651,8 @@ footer p {
   }
 
   .banner h2 {
-    font-size: 5vw;
+    padding-top: 25vh;
+    font-size: 6vw;
     font-family: "Cedarville Cursive";
   }
 
@@ -652,7 +660,6 @@ footer p {
     font-size: 1em;
     width: 10vw;
     height: 6vh;
-    margin-left: 44vw;
   }
 
   .home-detail h2 {
@@ -663,7 +670,7 @@ footer p {
   }
 
   .home-detail p {
-    width: 60%;
+    width: 65%;
     margin: auto;
     text-align: center;
   }

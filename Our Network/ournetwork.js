@@ -6,4 +6,3 @@ const burgerMenu = () => {
         x.style.display = "block";
     }
 };
-

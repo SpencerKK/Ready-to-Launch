@@ -1,4 +1,4 @@
-* {
+  * {
   font-family: Spartan;
   margin: 0;
   padding: 0;
@@ -16,9 +16,8 @@ button {
   text-align: center;
 }
 
-#brand h2 {
-  font-weight: 300;
-  margin-left: 1em;
+#brand img {
+  width: 50vw;
 }
 
 .nav {
@@ -59,51 +58,57 @@ button {
 
 /**************** Main ****************/
 
-.title-container {
-  line-height: 1.4;
-  padding: 2em 0;
+.text {
+  /* width: 80%; */
+  margin: 1em auto 0 auto;
+  text-align: left;
 }
 
-.title-container h1 {
-  width: 80%;
-  margin: 0 auto;
+.text h1 {
   text-align: center;
 }
 
-.text-content p {
+.text {
   width: 80%;
-  margin: 0 auto;
-  line-height: 2;
-  padding-bottom: 2em;
 }
 
-/**************** List ****************/
-
-.list-content {
-  background: url(/images/our-network-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.text p {
+  font-size: 1em;
+  line-height: 2.3em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  padding: 1em 0;
 }
 
-.list-content ul {
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
   width: 80%;
+}
+
+.text ul {
+  width: 100%;
   margin: 0 auto;
   padding: 2em 0;
+  border-top: 1px solid pink;
 }
 
-.list-content li {
+.text li {
   margin: 0;
-  width: 80%;
   margin: 0 auto;
   line-height: 1.4;
   padding: 0.5em;
 }
+
 
 /**************** Footer ****************/
 
 footer {
   text-align: center;
   height: 9em;
+  margin-top: 3em;
 }
 
 footer h1 {
@@ -112,7 +117,7 @@ footer h1 {
 }
 
 footer h1 span {
-  font-size: 0.5em;
+  font-size: 0.3em;
 }
 
 footer p {
@@ -128,13 +133,14 @@ footer p {
   font-size: 2em;
   border-radius: 50%;
   color: #313639;
-  line-height: 1.7em;
-  width: 1.5em;
-  height: 1.5em;
   padding: 0.3em;
   text-align: center;
   display: inline-block;
   transition: 0.5s;
+}
+
+.instagram:hover {
+  color: #c32aa3;
 }
 
 .youtube:hover {
@@ -145,15 +151,16 @@ footer p {
   color: #1db954;
 }
 
+.itunes:hover {
+  color: #ea4cc0;
+}
+
+
 /**************** Queries ****************/
 
 @media screen and (min-width: 600px) {
   .nav {
-    padding: 2em;
-  }
-
-  .med-links a:hover {
-    color: pink;
+    padding: 1em;
   }
 
   .med-nav .selected {
@@ -161,19 +168,22 @@ footer p {
     color: #313639;
   }
 
-  .nav h2 {
-    font-size: 2em;
+  .med-links a:hover {
+    color: pink;
   }
 
-  /**************** Main ****************/
-
-  .title-container {
-    line-height: 1.4;
-    padding: 2em 0;
+  #brand img {
+    width: 20em;
+    margin: 0;
+    padding: 0;
   }
 
-  .text-content p {
-    width: 70%;
+  .text h1 {
+    margin-top: 1em;
+  }
+
+  .img-container img {
+    margin-top: 0;
   }
 }
 
@@ -190,14 +200,13 @@ footer p {
     display: none;
   }
 
-  #brand {
+  #brand img {
     display: none;
   }
 
-  .med-nav h2 {
-    float: left;
-    font-weight: 400;
-    font-size: 3vw;
+  .med-nav img {
+    width: 32vw;
+    padding-top: 0.9em;
   }
 
   .med-nav {
@@ -222,32 +231,17 @@ footer p {
   .med-links a {
     margin: 0 1vw;
   }
-
-  /**************** Main ****************/
-
-  .title-container {
-    line-height: 1.4;
-    padding: 2em 0;
-  }
-
-  .title-container h1 {
-    width: 70%;
-  }
-
-  .list-content li {
-    line-height: 1.4em;
-    list-style: circle;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  #brand h2 {
-    font-size: 2.2em;
-  }
-
   .med-nav {
     height: 6em;
     line-height: 6em;
+  }
+
+  .med-nav img {
+    width: 30em;
+    padding-top: 0.7em;
   }
 
   .med-links a {
@@ -255,31 +249,29 @@ footer p {
     font-weight: 400;
   }
 
-  /**************** Main ****************/
+    /* Main */
 
-  .title-container {
-    line-height: 1.4;
-    padding: 2em 0;
-    margin-top: 3em;
-  }
+    .main {
+      width: 80%;
+      margin: 4em auto 0 auto;
+    }
+  
+    .text {
+      width: 50%;
+      float: left;
+    }
+  
+    .img-container img {
+      width: 40%;
+      margin-top: 8em;
+    }
 
-  .title-container h1 {
-    width: 50%;
-    font-size: 2.2em;
-  }
+    footer {
+      width: 100%;
+      float: left;
+    }
 
-  .text-content {
-    padding-bottom: 2em;
-  }
-
-  .list-content {
-    padding: 3em 0;
-  }
-
-  .list-content li {
-    text-align: center;
-    width: 70%;
-    list-style: inside;
-    line-height: 1.9;
-  }
 }
+
+
+

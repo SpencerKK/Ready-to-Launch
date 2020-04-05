@@ -6,7 +6,6 @@
 
 body {
   font-size: 16px;
-  background: rgba(255, 192, 203, 0.694);
 }
 
 button {
@@ -17,9 +16,8 @@ button {
   text-align: center;
 }
 
-#brand h2 {
-  font-weight: 300;
-  margin-left: 1em;
+#brand img {
+  width: 50vw;
 }
 
 .nav {
@@ -58,71 +56,56 @@ button {
   display: none;
 }
 
-/**************** Main ****************/
+/****************** Main ******************/
 
-.title-container {
-  text-align: center;
-  margin-top: 2em;
-}
-
-.title-container h1 {
-  font-size: 2em;
-}
-
-.sub-header {
-  width: 80%;
-  margin: 1em auto 0 auto;
-  text-align: left;
-}
-
-.sub-header p {
-  font-size: 1em;
-  line-height: 2;
-  margin-bottom: 1em;
-}
-
-/**************** Form ****************/
-
-.form-container {
-  text-align: center;
-  margin-top: 3em;
-}
-
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  background: pink;
+.container img {
+  display: block;
   width: 90%;
-  margin: 0 auto;
-  padding: 1em 0;
-  border: 1px solid #313639;
+  margin: 0 auto 2em auto;
 }
 
-.form-container h3 {
-  font-weight: 400;
-  font-size: 2em;
-  padding-bottom: 1em;
+.form-container h1 {
+  text-align: center;
+  color: #313639;
 }
 
 .form-container p {
-  margin-bottom: 2em;
-  line-height: 2em;
-  padding-bottom: 1em;
-  border-bottom: 3px solid rgb(255, 222, 227);
-}
-
-.form-container input,
-textarea {
-  font-size: 1em;
-  margin: 0.5em auto;
-  padding: 0.8em;
-  border: none;
+  text-align: center;
   width: 80%;
+  margin: 1em auto;
+  line-height: 1.4;
+  color: #313639;
 }
 
-.form-container textarea {
-  padding: 0.5em;
-  width: 82%;
+/****************** Form ******************/
+
+.form-container {
+  text-align: center;
+}
+
+.form-container form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-container form input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #313639;
+  -webkit-appearance: none;
+  /* -webkit-border-radius: 0px; */
+  height: 3em;
+  margin: 0.7em auto;
+  font-size: 1em;
+  padding-left: 1em;
+  background: #fafafa;
+}
+
+.form-container form textarea {
+  padding-top: 0.7em;
+  height: 10em;
 }
 
 .form-container button {
@@ -139,7 +122,7 @@ textarea {
 
 footer {
   text-align: center;
-  height: 10em;
+  height: 9em;
   margin-top: 5em;
 }
 
@@ -149,7 +132,7 @@ footer h1 {
 }
 
 footer h1 span {
-  font-size: 0.5em;
+  font-size: 0.3em;
 }
 
 footer p {
@@ -162,28 +145,36 @@ footer p {
 }
 
 .socials a {
-  font-size: 1.2em;
+  font-size: 2em;
   border-radius: 50%;
-  color: #fff;
-  background: #313639;
-  line-height: 1.7em;
-  width: 1.5em;
-  height: 1.5em;
+  color: #313639;
   padding: 0.3em;
   text-align: center;
   display: inline-block;
   transition: 0.5s;
 }
 
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.spotify:hover {
+  color: #1db954;
+}
+
+.itunes:hover {
+  color: #ea4cc0;
+}
+
 /**************** Queries ****************/
 
 @media screen and (min-width: 600px) {
   .nav {
-    padding: 2em;
-  }
-
-  .med-links a:hover {
-    color: pink;
+    padding: 1em;
   }
 
   .med-nav .selected {
@@ -191,26 +182,33 @@ footer p {
     color: #313639;
   }
 
-  .nav h2 {
-    font-size: 2em;
+  .med-links a:hover {
+    color: pink;
   }
 
-  .title-container h1 {
-    font-size: 3em;
+  #brand img {
+    width: 20em;
+    margin: 0;
+    padding: 0;
   }
 
-  .form-container {
-    margin-top: 3em;
+  .container {
+    width: 90%;
+    margin: 3em auto 0 auto;
   }
 
-  .form-container form {
-    width: 80%;
-    padding-top: 2em;
+  .container img {
+    float: left;
+    width: 40%;
   }
 
-  .form-container textarea {
-    padding: 0.5em;
-    width: 81%;
+  .container .form-container {
+    float: left;
+    width: 60%;
+  }
+
+  footer {
+    margin-top: 50em;
   }
 }
 
@@ -227,14 +225,13 @@ footer p {
     display: none;
   }
 
-  #brand {
+  #brand img {
     display: none;
   }
 
-  .med-nav h2 {
-    float: left;
-    font-weight: 400;
-    font-size: 3vw;
+  .med-nav img {
+    width: 32vw;
+    padding-top: 0.9em;
   }
 
   .med-nav {
@@ -260,28 +257,33 @@ footer p {
     margin: 0 1vw;
   }
 
-  .form-container form {
-    width: 50%;
-    padding-top: 2em;
-  }
-
-  .form-container button {
-    margin-bottom: 0;
+  footer {
+    margin-top: 70em;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #brand h2 {
-    font-size: 2.2em;
-  }
-
   .med-nav {
     height: 6em;
     line-height: 6em;
   }
 
+  .med-nav img {
+    width: 30em;
+    padding-top: 0.7em;
+  }
+
   .med-links a {
     font-family: "Spartan";
     font-weight: 400;
+  }
+
+  .form-container h1 {
+    font-size: 3em;
+    margin-top: 1em;
+  }
+
+  .form-container p {
+    font-size: 1.5em;
   }
 }
