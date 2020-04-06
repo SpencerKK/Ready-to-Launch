@@ -355,6 +355,7 @@ form select {
   position: absolute;
   z-index: -1;
   bottom: 0;
+  display: none;
 }
 
 .sml-feed {
