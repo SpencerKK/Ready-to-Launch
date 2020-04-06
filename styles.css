@@ -354,6 +354,7 @@ form select {
   position: absolute;
   z-index: -1;
   bottom: 0;
+  display: none;
 }
 
 .sml-feed {
@@ -617,6 +618,10 @@ footer p {
 
   .questions-container > div:first-child {
     margin-right: 20px;
+  }
+
+  .insta-feed img {
+    display: block;
   }
 
   .lrg-feed {
