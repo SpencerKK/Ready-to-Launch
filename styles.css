@@ -348,13 +348,13 @@ form select {
 
 .insta-feed {
   position: relative;
+  overflow: hidden;
 }
 
 .insta-feed img {
   position: absolute;
   z-index: -1;
   bottom: 0;
-  display: none;
 }
 
 .sml-feed {
