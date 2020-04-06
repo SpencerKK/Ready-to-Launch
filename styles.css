@@ -355,7 +355,7 @@ form select {
   position: absolute;
   z-index: -1;
   bottom: 0;
-  display: none;
+  display: none !important;
 }
 
 .sml-feed {
@@ -622,7 +622,7 @@ footer p {
   }
 
   .insta-feed img {
-    display: block;
+    display: block !important;
   }
 
   .lrg-feed {
